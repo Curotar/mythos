@@ -16,6 +16,7 @@ body {
   font-family: u.$font;
   background-color: var(--background-color);
   color: var(--text-color);
+  margin-block-end: 50vh; //temporary, remove after site is complete
 }
 
 .visually-hidden {
@@ -25,4 +26,13 @@ body {
   width: 1px;
   height: 1px;
   overflow: hidden;
+
+  &:focus {
+    left: 0;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    padding: 0.5rem;
+    border: 1px solid;
+  }
 }
