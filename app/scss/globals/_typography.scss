@@ -36,6 +36,28 @@ h2 {
 h3 {
   font-size: u.rem(24);
   line-height: 1;
+  margin-block-end: u.rem(10);
+
+  &.large {
+    font-size: u.rem(36);
+    font-size: clamp(
+      u.rem(36),
+      2.022727272727273rem + 0.9696969696969697vw,
+      u.rem(44)
+    );
+
+    span {
+      display: block;
+      font-size: u.rem(20);
+      font-size: clamp(
+        u.rem(20),
+        1.1363636363636365rem + 0.48484848484848486vw,
+        u.rem(24)
+      );
+      text-transform: uppercase;
+      margin-block-end: u.rem(10);
+    }
+  }
 }
 
 p {
@@ -67,4 +89,8 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+a {
+  color: var(--text-link);
 }
